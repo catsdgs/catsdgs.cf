@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Palanquin+Dark');
+header {
+	text-align: center;
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 40px;
+}
+header a{
+	color: #581845;
+	margin: 20px;
+	padding: 1rem;
+	
+	
+
+}
+footer {
+	text-align: center;
+	
+}
+header a h1{
+	background-color: #FFC300;
+	display: inline;
+	border: dashed;
+	border-color: #581845;
+	font-size: 40px;
+}
+body{
+	font-size: 20px;
+	color: #900C3F;
+	font-family: 'Libre Franklin', sans-serif;
+	background-color: #F6FFE5; 
+}
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 15px;
+  color: #C70039;
+}
+header a h3{
+	display: inline;
+}
+
+.videocaption{
+	font-size: 20px;
+	color: #581845
+}
+.videodescription{
+  font-size: 13px;
+  color: #C70039;
+}

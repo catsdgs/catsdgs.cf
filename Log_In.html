@@ -1,0 +1,54 @@
+<html>
+    <script type="text/javascript">
+		function login() {
+	    var username = document.getElementById('username');
+		var pswd = document.getElementById('pwd');
+		
+		var user = "Admin";
+		var pass = "Admins12345!";
+		
+		if(username.value === user && pswd.value === pass) {
+			console.log('You are logged in!');
+		    window.open('index.html','_self', false);
+		}
+		
+		
+		console.log(username.value);
+		console.log(pswd.value);
+		}
+
+	</script>	
+<head>
+<title>Log In</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="webstylesheet.css"
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+</head>
+<body>
+<header>
+    <a href="index.html"><h1>Home</h1></a>
+	<a href="aboutme.html"><h1>About</h1></a>
+	<a href="videos.html"><h1>Videos</h1></a>
+	<a href="links.html"><h1>Links</h1></a>
+	<a href="Log_In.html"><h3>Log In</h3></a>
+</header>
+<br>
+<br>
+<!-- Put text here -->
+<div class="container">
+
+	<form>
+	    Username:<input type="text" id="username">
+		<br>
+		Password:<input type="password" id="pwd">
+		<button type="button" onclick="login()"> Log In </button>
+	
+	</form>
+
+</div>
+
+<footer>
+    <p> Copyright© 2017 D.J. Saderholm, All Rights Reserved. Designed & Coded by D.J.</p>
+</footer>
+<body/>
+</html>
