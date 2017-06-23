@@ -3,7 +3,7 @@
 		var pswd = document.getElementById('pwd');
 		// Incorrect Password: "catsdgs password" correct: var passcorrect = "cat5ist!";
 		var user = "catsdgs";
-		var pass = "catsdgspassword";
+		var pass = "catsdgs";
 		
 		if(username.value === user && pswd.value === pass) {
 			console.log('You are logged in!');
