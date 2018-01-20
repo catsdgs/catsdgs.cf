@@ -54,7 +54,7 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    color: #0570B7;
 }
 
 @media(min-width:768px) {
@@ -96,7 +96,7 @@ header .header-content .header-content-inner p {
 
 .intro {
 	color: #fff;
-    background-color: yellowgreen;
+    background-color: #124160;
     padding: 70px 0;
     text-align: center;
 }
@@ -106,8 +106,8 @@ header .header-content .header-content-inner p {
 }
 
 .content-2 {
-	color: #fff;
-    background-color: #222;
+	color: #0570B7;
+    background-color: #B2C7D5;
 }
 
 .content-3 {
