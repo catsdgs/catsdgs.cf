@@ -423,9 +423,9 @@ img::-moz-selection {
 }
 
 .text-primary {
-    color: yellowgreen;
+    color: #2B5875;
 }
 
 .bg-primary {
-    background-color: yellowgreen;
+    background-color: #2B5875;
 }
