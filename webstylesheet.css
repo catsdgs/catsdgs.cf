@@ -31,7 +31,7 @@ body{
 	font-size: 20px;
 	color: #900C3F;
 	font-family: 'Libre Franklin', sans-serif;
-	background-color: #F6FFE5; 
+	background-color: #93CCF3; 
 }
 footer {
   position: absolute;
@@ -40,7 +40,7 @@ footer {
   left: 0;
   padding: 1rem;
   font-size: 15px;
-  color: #C70039;
+  color: #1A5176;
 }
 header a h3{
 	display: inline;
