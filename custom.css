@@ -1,7 +1,6 @@
 body {
     padding-top: 50px; /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top.*/
-    background-color: #CBD5F7;
-    color: #CBD5F7;	
+    background-color: #F5F6FB;
 }
 
 .portfolio-item {
