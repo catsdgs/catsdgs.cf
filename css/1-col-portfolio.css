@@ -9735,7 +9735,7 @@ label,
 .modal-header .close:hover, .modal-header .close:focus, .modal-footer .close:hover, .modal-footer .close:focus {
   opacity: 1;
 }
-.img-fluid rounded mb-3 mb-md-0{
+.col-md-7 img{
   border: 3px black;
   border-radius: 5px;
 }
