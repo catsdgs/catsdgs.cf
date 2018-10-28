@@ -68,4 +68,4 @@
   defineElementGetter(HTMLElement.prototype, 'classList', function () {
     return new DOMTokenList(this);
   });
-})(); 
+})();
