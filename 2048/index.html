@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
+  <title>Unblocked 2048 for Chromebooks</title>
 
-  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link href="2048.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
@@ -19,7 +19,7 @@
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">2048</h1>
+      <h1 class="title">Unblocked 2048 for Chromebooks</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
@@ -27,7 +27,19 @@
     </div>
 
     <div class="above-game">
-      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong> Alright. To make this work, press the fullscreen key on your chromebook (next to the task switcher key.) Or, you can click <script>
+<!--
+function fullwin(){
+window.open("bigpage.html","bfs","fullscreen,scrollbars")
+}
+//-->
+</script>
+
+<center>
+<form>
+<input type="button" onClick="fullwin()" value="here">
+</form>
+</center>If a teacher comes by, press "c" to show a blank chromebook screen. Press "c" again to get rid of it.</p>
       <a class="restart-button">New Game</a>
     </div>
 
@@ -77,12 +89,9 @@
     </p>
     <hr>
     <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+    <strong class="important">Note:</strong> This site is not official version of 2048. You can play the original at <a href="http://git.io/2048">this website.</a>
     </p>
     <hr>
-    <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
-    </p>
   </div>
 
   <script src="js/bind_polyfill.js"></script>
