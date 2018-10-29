@@ -18,6 +18,7 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
+    <img id="fullscreenimage" class="fullscreenimg" src="google-search.jpeg" alt="">
     <div id="page">
   <div class="container">
     <div class="heading">
@@ -131,6 +132,9 @@ function showimage()
     $("body").css("background-image","url('google-search.jpeg')"); // Onclick of button the background image of body will be test here. Give the image path in url
     $('#page').hide(); //This will hide the button specified in html
 }
+</script>
+<script type="text/javascript">
+    $("#fullscreenimage").hide();
 </script>
 </body>
 </html>
