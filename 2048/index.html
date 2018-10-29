@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
+  <title>Google</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -19,6 +19,7 @@
 </head>
 <body>
     <img id="fullscreenimage1" class="fullscreenimg" src="google-search.jpeg" alt="">
+    <iframe id="if1" width="100%" height="254" style="visibility:visible" src="http://www.google.com/custom?q=&btnG=Search"></iframe>
     <div id="page">
   <div class="container">
     <div class="heading">
@@ -126,15 +127,5 @@
     }
   }
   </script>
-  <script type="text/javascript">
-function showimage()
-{
-    $('#page').hide();
-    $('#fullscreenimg1').toggle(); 
-}
-</script>
-<script type="text/javascript">
-    $("#fullscreenimage").hide();
-</script>
 </body>
 </html>
