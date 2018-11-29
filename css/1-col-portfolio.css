@@ -9739,3 +9739,7 @@ label,
     border: 3px solid gray;
     border-radius: 5px;
 }
+#keyimg {
+    width: 20px;
+    height: 10px;
+}
