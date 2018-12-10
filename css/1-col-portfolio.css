@@ -9743,3 +9743,7 @@ label,
     width: 55px;
     height: 21px;
 }
+#bodyContent {
+   display:none;
+   height: 100%;
+}
