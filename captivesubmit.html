@@ -9,7 +9,27 @@
    <meta content="" name="author">
    <link href="favicon-1.ico" rel="shortcut icon" type="image/png">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   <title>Please login</title><!---Favicon -->
+   <title>Not so far...</title><!---Favicon -->
+   <script type="text/javascript">
+   window.onload = function() {
+   var bt = document.getElementById('btSubmit');
+   bt.disabled = true;
+   };
+   </script>
+   <script type="text/javascript">
+   function isValid(){
+   var password = document.getElementById('password').value;
+   var bt = document.getElementById('btSubmit');
+   if (password == "tempint1"){
+           bt.disabled = false;
+           {alert('Correct password! Please click "Access Internet"!')}
+       }
+       else {
+           bt.disabled = true;
+           {alert('Invalid Code')}
+       }
+   }
+   </script>
 </head>
   <style>
     body {
@@ -29,10 +49,14 @@
 <h1><b>D.J's BOOSTED Wifi Hotspot Login</b></h1>
 <h3>You thought you were going to get free internet just like that? Well friend, that's not true. As you have probably seen that your login page asks for a code. Well, you need to find D.J. to get your specific code! It might not be free though.</h3>
 <br>
-<form method='GET' action='$authaction'>
+<h4>Once you get the code from D.J., type it in the box below. Click on "Test Your Code". If the code is correct, the "Access Internet" button should be enabled. <i>The button will only enable after pressing the "Test Your Code" button.</i></h4>
+<br>
+<form method='GET' action='$authaction' name="PasswordField">
   <input type='hidden' name='tok' value='$tok'>
   <input type='hidden' name='redir' value='$redir'>
-  <input type='submit' value='Click Here to Enter'>
+  <input type="password" id="password" name="password">
+  <input type="button" value="Test Your Code" onclick="isValid(this);">
+  <input type='submit' id="btSubmit" value='Access Internet' disabled>
 </form>
 </div>
 </body>
@@ -45,6 +69,17 @@ $(document).keydown(function(e){
     if(e.which === 123){
        return false;
     }
+});
+</script>
+<script>
+window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted ||
+                         ( typeof window.performance != "undefined" &&
+                              window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    // Handle page restore.
+    window.location.reload();
+  }
 });
 </script>
 <script>
