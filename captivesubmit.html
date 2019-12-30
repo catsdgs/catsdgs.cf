@@ -52,7 +52,10 @@
     vertical-align: middle;
     background-image: url("https://www.hdwallpapers.in/walls/windows_xp_bliss-wide.jpg");
     color: black;
-    font-family: "Comic Sans MS"
+    font-family: "Comic Sans MS";
+    text-align: center;
+    vertical-align: middle;
+    padding: 70px 0;
     }
     .tex-muted {
       color: #ea2c2c;
@@ -62,16 +65,19 @@
 <div class="container">
 <br>
 <h1><b>D.J's BOOSTED Wifi Hotspot Login</b></h1>
-<h3>You thought you were going to get free internet just like that? Well friend, that's not true. You need to find D.J. to get your specific code! It might not be free though.</h3>
+<h3>Not so far... You need to find D.J. to get your access code.</h3>
 <br>
-<h4>Once you get the code from D.J., type it in the box below. Click on "Test Your Code". If the code is correct, the "Access Internet" button should be enabled. <i>The button will only enable after pressing the "Test Your Code" button.</i></h4>
+<h4>Once you get the code from D.J., type it in the box below. Click on "Test Your Code". If the entered code matches one in the database, the "Access Internet" button should be enabled. <i>The button will only enable after pressing the "Test Your Code" button.</i> Also agree to the terms, conditions, and information by checking the box.</h4>
 <br>
 <form method='GET' action='$authaction' name="PasswordField">
   <input type='hidden' name='tok' value='$tok'>
   <input type='hidden' name='redir' value='$redir'>
-  <input type="password" id="password" name="password">
-  <input type="button" value="Test Your Code" onclick="isValid(this);">
-  <input type='submit' id="btSubmit" value='Access Internet' disabled>
+  <input type="checkbox" class="form-check-input" id="agree-to-terms" name="agree-to-terms" required="" autocomplete="off">
+  <label>I understand that this internet is being paid for by D.J. I also understand, since this is an open network, that any POST requests <i>could</i> be intercepted by a third party (this means unsecured logins and things like that). I also understand that D.J. can see <i>only</i> a list of websites that I have gone to, and that if I want to encrypt my connection, so no one can see <i>anything</i>, that I should use a VPN (I recommend Windscribe VPN). <b>I also understand that distributing/saving my access code or attempting to get a code through malicious acts <i>will</i> result in my internet access being revoked and codes being changed.</label>
+<br>
+  <input type="password" id="password" name="password" placeholder="Enter access code here..." autocomplete="off" required="">
+  <input type="button" value="Test Your Code" onclick="isValid(this);" autoautocomplete="off">
+  <input type='submit' id="btSubmit" value='Access Internet' disabled autocomplete="off">
 </form>
 </div>
 <br>
